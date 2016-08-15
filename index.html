@@ -1,383 +1,543 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-    <title>Intro to Bootstrap</title>
+        <title>Introdução ao Bootstrap</title>
 
-    <meta name="description" content="">
-    <meta name="author" content="JobTrain Coders">
+        <meta name="description" content="">
+        <meta name="author" content="Yuri Malheiros">
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <!-- Bootstrap 4 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
-        <script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.3.js" ></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
 
-		<link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/theme/simple.css" id="theme">
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="lib/css/dark.css">
         <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi)
+                ? 'pdf'
+                : 'paper') + '.css" type="text/css" media="print">');
+        </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-  </head>
+        <!--[if lt IE 9]> <script src="lib/js/html5shiv.js"></script> <![endif]-->
+    </head>
 
-  <body>
+    <body>
 
-    <div class="reveal">
-      <div class="slides">
-        <section>
-          <h1>Intro to Bootstrap</h1>
-          <p>https://jtcoders.gitub.io/bootstrap</p>
-        </section>
-        <!-- FRAMEWORKS & WHAT BOOTSTRAP IS-->
-        <section>
-            <h2>Frameworks</h2>
-        </section>
-        <section>
-            <h2>What is a front-end framework?</h2>
-            <p>A collection of production-ready HTML, CSS, JavaScript components that we can use in our designs.</p>
-            <p><strong>CSS Frameworks</strong> - Usually include a reset, a grid system, styles for typography and forms. Some include support for mobile/print.</p>
-            <p><strong>Javascript Frameworks</strong> - Gives structure to your JavaScript code and keeps it organized.</p>
-        </section>
-        <section>
-            <h2>What is a front-end framework?</h2>
-            <p>Responsiveness and cross-browser consistency for free.</p>
-            <p>Modular and reusable components.</p>
-        </section>
-        <section>
-            <h2>What is Bootstrap?</h2>
-            <p>Twitter's Bootstrap is a front-end UI (user interface) framework</p>
-            <p>Speeds up the development of new websites and web applications.</p>
-            <img src="image/devices.png" />
-        </section>
-        <section>
-            <p>#1 Project on github with 95,000+ stars and over 42,000 forks</p>
-            <p>Bootstrap is an open source project on GitHub, meaning anyone can contribute to its progress.</p>
-            <img src="image/github.png" />
-        </section>
-
-        <section>
-          <h2>What Comes with Bootstrap?</h2>
-          <p>You can download all the necessary Bootstrap files from <a href="https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.2.zip" target="blank"> getbootstrap.com</a> or from the <a href="https://github.com/twbs/bootstrap" target="blank">Bootstrap repo</a> on GitHub.</p>
-          <small>Note: We are using Bootstrap 4. Version 3 is still very popular as well.</small>
-        </section>
-        <section>
-          <h2>The File Structure</h2>
-          <img src="image/bootstrap-files.png">
-        </section>
-        <section>
-          <h2>Layout:</h2>
-          <p>Options for structuring your pages with Bootstrap, including global styles, required scaffolding, grid system, and more.</p>
-        </section>
-        <section>
-          <h2>Content:</h2>
-          <p>Styles for displaying content with some of the most commonly used HTML elements, including normalization, typography, images, tables, and more.</p>
-        </section>
-        <section>
-          <h2>Components:</h2>
-          <p>Over a dozen reusable components built to provide buttons, dropdowns, input groups, navigation, alerts, and much more.</p>
-        </section>
-        <section>
-          <h2>See it in action!</h2>
-          <p>Check out some of the components by opening the <a href="examples/example.html"><code>example.html</code></a> file in your browser window.</p>
-        </section>
-
-        <!-- GRID SYSTEM -->
-        <section>
-          <h2>Bootstrap Grid System</h2>
-        </section>
-        <section>
-          <p>Bootstrap is based on a 12-column grid, and uses CSS classes to decide the width of each element.</p>
-          <img src="image/12-grid.png" alt="12 columns" />
-        </section>
-          <section>
-          <p>Each element can take up between 1-12 columns worth of space...<!-- <br> and each element within that element can take up between 1-12 columns worth of space...<br>and each element within that element can take up between 1-12 columns worth of space... </p> -->
-          <img src="image/12-grid-overlay.png" alt="12 columns" />
-        </section>
-        <section>
-          <h2>Some Rules:</h2>
-            <ul>
-      		    <li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding.</li>
-      		    <li>Use rows (<code>.row</code>) to create horizontal groups of columns.</li>
-      		    <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
-      		  </ul>
-        </section>
-        <section>
-          <h2>Code Example</h2>
-            <pre><code class="xml"  data-trim>
-<div class="container">
-  <div class="row">
-      [CONTENT FOR ROW]
-  </div>
-</div></code></pre>
-        </section>
-        <section>
-          <h2>See it in action!</h2>
-          <p>Open up <a href="examples/columns.html" target="blank"><code>columns.html</code></a> in your browser window.</p>
-          <p>Resize your browser to see where the columns break to fit 100% of the width.</p>
-        </section>
-        <section>
-          <h2>See it in action!</h2>
-          <p>Open up <a href="examples/columns-fluid.html" target="blank"><code>columns-fluid.html</code></a> in your browser window.</p>
-          <p>Resize your browser to see where the columns break to fit 100% of the width.</p>
-        </section>
-        <section>
-          <h2>Column Classes</h2>
-          <img src="image/col-classes.png">
-        </section>
-        <section>
-            <h2>In other words...</h2>
-            <p>If you want to have two 50% columns on a mobile phone, you would use <code>.col-xs-6</code> nested in a <code>.row</code>, and the rows would be consistent on every device...</p>
-            <img src="image/12-grid-2-col.png" />
-        </section>
-        <section>
-          <h2>Two 50% width columns</h2>
-          <pre><code class="xml" data-trim>
-<div class="container">
-  <div class="row">
-    <div class="col-xs-6">
-        [COLUMN 1 CONTENT]
-    </div>
-    <div class="col-xs-6">
-        [COLUMN 2 CONTENT]
-    </div>
-  </div>
-</div></code></pre>
-          <p><small>Two 50% columns on a mobile phone</small></p>
-        </section>
-        <section>
-            <p>If you want to have four 25% columns on a desktop, and would like them to break to 100% on a tablet, you would use <code>.col-md-3</code> nested in a <code>.row</code>.</p>
-            <img src="image/12-grid-4-col.png" />
-        </section>
-                    <section>
-                    <h2>Four 25% width columns</h2>
-        <pre><code class="xml" data-trim>
-<div class="container">
-    <div class="row">
-        <div class="col-md-3">
-            [COLUMN 1 CONTENT]
-        </div>
-        <div class="col-md-3">
-            [COLUMN 2 CONTENT]
-        </div>
-        <div class="col-md-3">
-            [COLUMN 3 CONTENT]
-        </div>
-        <div class="col-md-3">
-            [COLUMN 4 CONTENT]
-        </div>
-    </div>
-</div></code></pre>
-        <p><small>Four 25% columns on desktop that break to 100% width on a tablet.</small></p>
-
-                    </section>
-                    <section>
-                        <h2>Multiple Grid Classes</h2>
-<pre><code class="xml" data-trim>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-8">
-            [COLUMN 1 CONTENT]
-        </div>
-        <div class="col-xs-6 col-md-4">
-            [COLUMN 2 CONTENT]
-        </div>
-    </div>
-</div></code></pre>
-                        <img src="image/bootstrap_example_grid.png">
-            </section>
-
-            <section>
-                <h2>Exercise: Grid</h2>
-                <a href="exercises/grid/grid_instructions.html" target="_blank" style="border-bottom: 1px solid;">Instructions</a>
-            </section>
-
-            <section>
-                <h2>Content</h2>
-            </section>
-            <section>
-                <h2>Typography</h2>
-                <p>Bootstrap's base <a href="http://v4-alpha.getbootstrap.com/content/typography/" target="_blank">typography classes</a> normalize headings, paragraph fonts, list styles and more.</p>
-                <p><a href="http://v4-alpha.getbootstrap.com/components/utilities/" target="_blank">Textual utility</a> classes are also included for layout</p>
-
-                <iframe height='265' scrolling='no' src='//codepen.io/trucnguyen/embed/PzGNGj/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/trucnguyen/pen/PzGNGj/'>Bootstrap - Typography</a> by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on <a href='http://codepen.io'>CodePen</a>.
-                </iframe>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>Introdução ao Bootstrap</h1>
+                    <p>https://yurimalheiros.github.io/bootstrap</p>
+                    <small>(Adaptado de Girl Develop It San Francisco - GDISF)</small>
                 </section>
-
-                            <section>
-                <h2><a href="http://v4-alpha.getbootstrap.com/content/images/">Responsive Images</a></h2>
-                <p><a href="http://v4-alpha.getbootstrap.com/content/images/">Images in Bootstrap 4</a> can be made responsive by adding the <code>.img-fluid</code> class.
-                <p>Applies <code>max-width: 100%;</code> and <code>height: auto;</code> so it scales to fit the parent element.</p>
-            </section>
-             <section>
-                <h2>Other Image Styles</h2>
-            <ul>
-                <li><code>.img-rounded</code> applies rounded edges</li>
-                <li><code>.img-circle</code> takes a square image and applies the style <code>border-radius: 50%;</code></li>
-                <li><code>.img-thumbnail</code> applies a border with rounded edges to the image</li>
-
-                <iframe height='265' scrolling='no' src='//codepen.io/trucnguyen/embed/KMzYGe/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/trucnguyen/pen/KMzYGe/'>Bootstrap - Image Styles</a> by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-            </ul>
-
-            </section>
-            <section>
-    					<h2>Components</h2>
-              <ul>
-                <li>navigation</li>
-                <li>jumbotron</li>
-                <li>forms, modals, & alerts</li>
-                <li>cards</li>
-              </ul>
-    				</section>
-
-            <section>
-                <h2>Navigation</h2>
-            </section>
-            <section>
-                <h2>Navbar</h2>
-                <p>A simple wrapper for positioning branding, navigation, and other elements into a concise header.</p>
-                <p>Require a wrapping <code>.navbar</code> and a color scheme.</p>
-                <p>Navbars and their contents are fluid by default.</p>
-            </section>
-
-            <section>
-                <h2>Navbar Example</h2>
-                <iframe height='500' scrolling='no' src='//codepen.io/trucnguyen/embed/LZNBGd/?height=500&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/trucnguyen/pen/LZNBGd/'>Bootstrap Navbar</a> by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on <a href='http://codepen.io'>CodePen</a>.
-                </iframe>
-            </section>
-
-            <section>
-                <h2>Navbar Color Scheme</h2>
-                <iframe height='265' scrolling='no' src='//codepen.io/trucnguyen/embed/NrNBrW/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/trucnguyen/pen/NrNBrW/'>Bootstrap Navbar Colors</a> by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on <a href='http://codepen.io'>CodePen</a>.
-                </iframe>
-            </section>
-
-            <section>
-                <h2>Position - Full Width</h2>
-                <iframe height='500' scrolling='no' src='//codepen.io/trucnguyen/embed/RRaBGE/?height=500&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/trucnguyen/pen/RRaBGE/'>Bootstrap Navbar - Position</a> by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on <a href='http://codepen.io'>CodePen</a>.
-                </iframe>
-            </section>
-
-            <section>
-                <h2>Position - Fix To Top</h2>
-<iframe height='500' scrolling='no' src='//codepen.io/trucnguyen/embed/jrqpVW/?height=500&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/trucnguyen/pen/jrqpVW/'>Bootstrap Navbar - Position fixed to top</a> by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-            </section>
-
-            <section>
-                <h2>Position - Fix To Bottom</h2>
-<iframe height='500' scrolling='no' src='//codepen.io/trucnguyen/embed/mEPjOv/?height=500&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/trucnguyen/pen/mEPjOv/'>Bootstrap Navbar - Position fixed to bottom</a> by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-            </section>
-
-            <section>
-                    <h2>Jumbotron</h2>
-            </section>
-            <section>
-                <h2>Jumbotron</h2>
-                <p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p>
-                <img src="image/jumbotron.png" alt="jumbotron" />
-            </section>
-            <section>
-                <h2>Jumbotron Example</h2>
-    <iframe height='500' scrolling='no' src='//codepen.io/trucnguyen/embed/MeyBYy/?height=500&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/trucnguyen/pen/MeyBYy/'>Bootstrap Jumbotron</a> by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on <a href='http://codepen.io'>CodePen</a>.
-    </iframe>
+                <!-- FRAMEWORKS & WHAT BOOTSTRAP IS-->
+                <section>
+                    <h2>Frameworks</h2>
+                </section>
+                <section>
+                    <h2>O que é um framework front-end?</h2>
+                    <p>Uma coleção de componentes HTML, CSS e JavaScript prontos para usar nas nossas páginas web.</p>
+                  </section>
+                    <section>
+                        <h2>O que é um framework front-end?</h2>
+                    <p>
+                        <strong>Frameworks CSS</strong>
+                        - Geralmente incluem um reset, um sistema de grid e estilos para tipografia e formulários. Alguns incluem suporte a dispositivos móveis e para impressão.</p>
+                    <p>
+                        <strong>Frameworks JavaScript</strong>
+                        - Fornecem estrutura para o código JavaScript e o mantém organizado.</p>
+                </section>
+                <section>
+                    <h2>O que é um framework front-end?</h2>
+                    <p>Responsividade e consistência entre navegadores.</p>
+                    <p>Componentes modulares e reusáveis.</p>
+                </section>
+                <section>
+                    <h2>O que é o Bootstrap?</h2>
+                    <p>Bootstrap é um framework front-end focado na interface do usuário.</p>
+                    <p>Aumenta a velocidade de desenvolvimento de novos websites e aplicações.</p>
+                    <img src="image/devices.png"/>
+                </section>
+                <section>
+                    <p>Um dos projetos mais populares do GitHub com ~100.000 estrelas e mais de 44.000 forks.</p>
+                    <p>O Bootstrap é um projeto de código aberto no GitHub, então qualquer um pode contribuir com seu progresso.</p>
+                    <img src="image/github.png"/>
                 </section>
 
                 <section>
+                    <h2>O que vem com o Bootstrap?</h2>
+                    <p>Você pode fazer o download de todos os arquivos necessários em
+                        <a href="https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.2.zip" target="blank">
+                            getbootstrap.com</a>
+                        ou no
+                        <a href="https://github.com/twbs/bootstrap" target="blank">repositório</a>
+                        do GitHub.</p>
+                    <small>Obs: Vamos usar o Bootstrap 4, mas a versão 3 ainda é bastante popular.</small>
+                </section>
+                <section>
+                    <h2>Estrutura dos Arquivos</h2>
+                    <img src="image/bootstrap-files.png">
+                </section>
+                <section>
+                    <h2>Layout:</h2>
+                    <p>Opções para estruturar sua página com o Bootstrap, incluindo estilos globais, sistema de grid e uma base de apoio para iniciar o desenvolvimento.</p>
+                </section>
+                <section>
+                    <h2>Conteúdo:</h2>
+                    <p>Estilos para exibir conteúdo com os elementos mais comuns do HTML, incluindo tipografia, imagens, tabelas, etc.</p>
+                </section>
+                <section>
+                    <h2>Componentes:</h2>
+                    <p>Mais de uma dúzia de componentes reusáveis como botões, dropdowns, campos de entrada, alertas, entre outros.</p>
+                </section>
+                <section>
+                    <h2>Veja funcionando</h2>
+                    <p>Veja alguns componentes abrindo o arquivo
+                        <a href="examples/example.html">
+                            <code>example.html</code>
+                        </a>
+                        no seu navegador.</p>
+                </section>
+
+                <!-- GRID SYSTEM -->
+                <section>
+                    <h2>Sistema de Grid</h2>
+                </section>
+                <section>
+                    <p>O Bootstrap é baseado num sistema de grid com 12 colunas. Ele usa classes CSS para decidir o tamanho de cada elemento.</p>
+                    <img src="image/12-grid.png" alt="12 columns"/>
+                </section>
+                <section>
+                    <p>Cada elemento pode ocupar o espaço de 1 até 12 colunas.</p>
+                    <img src="image/12-grid-overlay.png" alt="12 columns"/>
+                </section>
+                <section>
+                    <h2>Algumas Regras:</h2>
+                    <ul>
+                        <li>Colunas devem ser colocadas dentro de uma classe
+                            <code>.container</code>
+                            (tamanho fixo) ou
+                            <code>.container-fluid</code>
+                            (tamanho fluido) para o alinhamento e padding ficarem corretos.</li>
+                        <li>Use linhas (<code>.row</code>) para criar um agrupamento horizontal de colunas.</li>
+                        <li>O conteúdo deve ser colocado em colunas e apenas colunas devem ser filhas das linhas.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Exemplo</h2>
+                    <pre><code class="xml" data-trim>
+<div class="container">
+  <div class="row">
+      [CONTEÚDO DA LINHA]
+  </div>
+</div></code></pre>
+                </section>
+                <section>
+                    <h2>Veja Funcionando</h2>
+                    <p>Abra o arquivo
+                        <a href="examples/columns.html" target="blank">
+                            <code>columns.html</code>
+                        </a>
+                        no seu navegador.</p>
+                    <p>Redimensione a janela do navegador para ver as colunas mudarem.</p>
+                </section>
+                <section>
+                    <h2>Veja Funcionando</h2>
+                    <p>Abra o arquivo
+                        <a href="examples/columns-fluid.html" target="blank">
+                            <code>columns-fluid.html</code>
+                        </a>
+                        no seu navegador.</p>
+                    <p>Redimensione a janela do navegador para ver as colunas mudarem.</p>
+                </section>
+                <section>
+                    <h2>Classes das Colunas</h2>
+                    <img src="image/col-classes.png">
+                </section>
+                <section>
+                    <h2>Em outras palavras...</h2>
+                    <p>Se você quer definir duas colunas com largura de 50% da tela num dispositivo móvel, você pode usar
+                        <code>.col-xs-6</code>
+                        como filho de uma
+                        <code>.row</code>.</p>
+                    <img src="image/12-grid-2-col.png"/>
+                </section>
+                <section>
+                    <h2>Duas colunas com 50% de largura</h2>
+                    <pre><code class="xml" data-trim>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+        [CONTEÚDO DA COLUNA 1]
+    </div>
+    <div class="col-xs-6">
+        [CONTEÚDO DA COLUNA 2]
+    </div>
+  </div>
+</div></code></pre>
+
+                </section>
+                <section>
+                    <p>Se você quer definir quatro colunas, cada uma com largura de 25% da tela num desktop, você pode usar
+                        <code>.col-md-3</code>
+                        como filho de uma
+                        <code>.row</code>.</p>
+                    <img src="image/12-grid-4-col.png"/>
+                </section>
+
+                <section>
+                    <h2>Quatro colunas com 25% de largura num desktop</h2>
+                    <pre><code class="xml" data-trim>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            [CONTEÚDO DA COLUNA 1]
+        </div>
+        <div class="col-md-3">
+            [CONTEÚDO DA COLUNA 2]
+        </div>
+        <div class="col-md-3">
+            [CONTEÚDO DA COLUNA 3]
+        </div>
+        <div class="col-md-3">
+            [CONTEÚDO DA COLUNA 4]
+        </div>
+    </div>
+</div></code></pre>
+
+                </section>
+                <section>
+                    <h2>Classes para Grid Múltiplo</h2>
+                    <pre><code class="xml" data-trim>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-8">
+            [CONTEÚDO DA COLUNA 1]
+        </div>
+        <div class="col-xs-6 col-md-4">
+            [CONTEÚDO DA COLUNA 2]
+        </div>
+    </div>
+</div></code></pre>
+                    <img src="image/bootstrap_example_grid.png">
+                </section>
+
+                <!-- <section>
+                <h2>Exercise: Grid</h2>
+                <a href="exercises/grid/grid_instructions.html" target="_blank" style="border-bottom: 1px solid;">Instructions</a>
+            </section> -->
+
+                <section>
+                    <h2>Conteúdo</h2>
+                </section>
+                <section>
+                    <h2>Tipografia</h2>
+                    <p>As
+                        <a href="http://v4-alpha.getbootstrap.com/content/typography/" target="_blank">classes básicas da tipografia</a>
+                        normalizam cabeçalhos, fontes dos parágrafos, estilo de lista, entre outros.</p>
+                    <p>
+                        <a href="http://v4-alpha.getbootstrap.com/components/utilities/" target="_blank">Classes utilitárias de texto</a>
+                        também são incluídas.</p>
+                </section>
+
+                <section>
+                    <h2>Tipografia</h2>
+                    <iframe height='415' scrolling='no' src='http://codepen.io/yurimalheiros/embed/akXAgb/?height=415&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                        <a href='http://codepen.io/yurimalheiros/pen/akXAgb/'>Bootstrap - Typography</a>
+                        by Yuri Malheiros (<a href='http://codepen.io/yurimalheiros'>@yurimalheiros</a>) on
+                        <a href='http://codepen.io'>CodePen</a>.
+                    </iframe>
+                </section>
+
+                <section>
+                    <h2>
+                        <a href="http://v4-alpha.getbootstrap.com/content/images/">Imagens Responsivas</a>
+                    </h2>
+                    <p>
+                        <a href="http://v4-alpha.getbootstrap.com/content/images/">Imagens no Bootstrap 4</a>
+                        podem ser definidas como responsivas adicionando a classe
+                        <code>.img-fluid</code>.
+                        <p>Ela aplica
+                            <code>max-width: 100%;</code>
+                            e
+                            <code>height: auto;</code>
+                            para que a imagem redimensione ficando do tamanho do elemento pai.</p>
+                    </section>
+                    <section>
+                        <h2>Outros Estilos de Imagem</h2>
+                        <ul>
+                            <li>
+                                <code>.img-rounded</code>
+                                arredonda as bordas da imagem</li>
+                            <li>
+                                <code>.img-circle</code>
+                                aplica o estilo
+                                <code>border-radius: 50%;</code>
+                            </li>
+                            <li>
+                                <code>.img-thumbnail</code>
+                                adiciona uma borda extra arredondada</li>
+                      </section>
+                      <section>
+                        <h2>Outros Estilos de Imagem</h2>
+                            <iframe height='415' scrolling='no' src='http://codepen.io/trucnguyen/embed/KMzYGe/?height=415&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                                <a href='http://codepen.io/trucnguyen/pen/KMzYGe/'>Bootstrap - Image Styles</a>
+                                by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on
+                                <a href='http://codepen.io'>CodePen</a>.
+                            </iframe>
+                        </ul>
+
+                    </section>
+                    <section>
+                        <h2>Componentes</h2>
+                        <ul>
+                            <li>Navegação</li>
+                            <li>Jumbotron</li>
+                            <li>Formulários, modais e alertas</li>
+                            <li>Cards</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Navegação</h2>
+                    </section>
+                    <section>
+                        <h2>Navbar</h2>
+                        <p>Usado para posicionar logotipo, barra de navegação e outros elementos de cabeçalho.</p>
+                        <p>É necessário usar a classe
+                            <code>.navbar</code>
+                            e definir um esquema de cor.</p>
+                        <p>A navbar e seu conteúdo é fluido por padrão.</p>
+                    </section>
+
+                    <section>
+                        <h2>Exemplo de Navbar</h2>
+                        <iframe height='500' scrolling='no' src='http://codepen.io/trucnguyen/embed/LZNBGd/?height=500&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/trucnguyen/pen/LZNBGd/'>Bootstrap Navbar</a>
+                            by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
+                        </iframe>
+                    </section>
+
+                    <section>
+                        <h2>Exemplo de Esquema de Cor da Navbar</h2>
+                        <iframe height='500' scrolling='no' src='http://codepen.io/trucnguyen/embed/NrNBrW/?height=500&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/trucnguyen/pen/NrNBrW/'>Bootstrap Navbar Colors</a>
+                            by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
+                        </iframe>
+                    </section>
+
+                    <section>
+                        <h2>Position - Full Width</h2>
+                        <iframe height='500' scrolling='no' src='http://codepen.io/trucnguyen/embed/RRaBGE/?height=500&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/trucnguyen/pen/RRaBGE/'>Bootstrap Navbar - Position</a>
+                            by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
+                        </iframe>
+                    </section>
+
+                    <section>
+                        <h2>Position - Fixo no Topo</h2>
+                        <iframe height='500' scrolling='no' src='http://codepen.io/trucnguyen/embed/jrqpVW/?height=500&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/trucnguyen/pen/jrqpVW/'>Bootstrap Navbar - Position fixed to top</a>
+                            by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
+                        </iframe>
+                    </section>
+
+                    <section>
+                        <h2>Position - Fixo Embaixo</h2>
+                        <iframe height='500' scrolling='no' src='http://codepen.io/trucnguyen/embed/mEPjOv/?height=500&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/trucnguyen/pen/mEPjOv/'>Bootstrap Navbar - Position fixed to bottom</a>
+                            by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
+                        </iframe>
+                    </section>
+
+                    <section>
+                        <h2>Jumbotron</h2>
+                    </section>
+                    <section>
+                        <h2>Jumbotron</h2>
+                        <p>Usado para mostrar conteúdo chave do seu site em destaque.</p>
+                        <img src="image/jumbotron.png" alt="jumbotron"/>
+                    </section>
+                    <section>
+                        <h2>Jumbotron</h2>
+                        <iframe height='500' scrolling='no' src='http://codepen.io/trucnguyen/embed/MeyBYy/?height=500&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/trucnguyen/pen/MeyBYy/'>Bootstrap Jumbotron</a>
+                            by Truc (<a href='http://codepen.io/trucnguyen'>@trucnguyen</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
+                        </iframe>
+                    </section>
+
+                    <!-- <section>
                     <h2>Exercise: Hero Image Homepage</h2>
                     <a style="border-bottom: 1px solid;" href="exercises/hero/hero_instructions.html" target="_blank">
                         Instructions
                         </a>
-                </section>
+                </section> -->
                     <section>
-                        <h2>Forms, Modals, & Alerts</h2>
+                        <h2>Formulários, Modais e Alertas</h2>
                     </section>
 
                     <section>
-                        <h2>Forms</h2>
-                        <p>Bootstrap makes styling forms easy and fast.</p>
+                        <h2>Formulários</h2>
+                        <p>Adicionar estilo a formulários é rápido e fácil usando o Bootstrap.</p>
                     </section>
 
                     <section>
                         <h2>.form-group</h2>
-                        <p>Use <code>.form-group</code> to organize sections of your forms</p>
-                        <p>Can be used on block elements like <code>fieldset</code> or <code>div</code></p>
-                        <iframe height='266' scrolling='no' src='//codepen.io/mjawili/embed/LNMjvm/?height=266&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/mjawili/pen/LNMjvm/'>LNMjvm</a> by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on <a href='http://codepen.io'>CodePen</a>.
+                        <p>Use a classe
+                            <code>.form-group</code>
+                            para organizar seções do formulário.</p>
+                        <p>Pode ser usado em elementos de blocos como
+                            <code>fieldset</code>
+                            ou
+                            <code>div</code>.
+                        </p>
+                      </section>
+
+                      <section>
+                          <h2>.form-group</h2>
+                        <iframe height='415' scrolling='no' src='http://codepen.io/mjawili/embed/LNMjvm/?height=415&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/mjawili/pen/LNMjvm/'>LNMjvm</a>
+                            by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
                         </iframe>
                     </section>
 
                     <section>
                         <h2>.form-control</h2>
-                        <p>Use to style...</p>
+                        <p>Usado para dar estilo a...</p>
                         <ul style="white-space: nowrap;">
-                            <li>Textual inputs (e.g. text, number, email)</li>
-                            <li>Select menus</li>
+                            <li>Inputs de texto (e.g. text, number, email)</li>
+                            <li>Selects</li>
                             <li>Textareas</li>
                         </ul>
-                        <iframe height='265' scrolling='no' src='//codepen.io/mjawili/embed/ezdZdx/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/mjawili/pen/ezdZdx/'>.form-control</a> by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on <a href='http://codepen.io'>CodePen</a>.
+
+                      </section>
+
+                      <section>
+                          <h2>.form-control</h2>
+                        <iframe height='415' scrolling='no' src='http://codepen.io/mjawili/embed/ezdZdx/?height=415&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/mjawili/pen/ezdZdx/'>.form-control</a>
+                            by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
                         </iframe>
                     </section>
 
                     <section>
-                        <h2>.radio and .checkbox</h2>
-                        <p>Use to style radios and checkboxes, of course.</p>
-                        <iframe height='266' scrolling='no' src='//codepen.io/mjawili/embed/bpOodd/?height=266&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/mjawili/pen/bpOodd/'>.checkbox and .radio</a> by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on <a href='http://codepen.io'>CodePen</a>.
+                        <h2>.radio e .checkbox</h2>
+                        <p>Usado para dar estilo para radios e checkboxes.</p>
+
+                      </section>
+
+                      <section>
+                          <h2>.radio e .checkbox</h2>
+                        <iframe height='415' scrolling='no' src='http://codepen.io/mjawili/embed/bpOodd/?height=415&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/mjawili/pen/bpOodd/'>.checkbox and .radio</a>
+                            by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
                         </iframe>
                     </section>
 
                     <section>
-                        <h2>Buttons</h2>
-                        <p>Add a <code>.btn</code> class along with a style class to your button.</p>
-                        <p>Bootstrap has six styles and variations.</p>
-                        <iframe height='266' scrolling='no' src='//codepen.io/mjawili/embed/oxJGXP/?height=266&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/mjawili/pen/oxJGXP/'>buttons</a> by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on <a href='http://codepen.io'>CodePen</a>.
+                        <h2>Botões</h2>
+                        <p>Adicione uma classe
+                            <code>.btn</code>
+                            junto com uma classe de estilo.</p>
+                        <p>O Bootstrap tem seis estilos e variações.</p>
+
+                      </section>
+
+                      <section>
+                          <h2>Botões</h2>
+                        <iframe height='415' scrolling='no' src='http://codepen.io/mjawili/embed/oxJGXP/?height=415&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/mjawili/pen/oxJGXP/'>buttons</a>
+                            by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
                         </iframe>
                     </section>
 
                     <section>
-                        <h2>Button tweaks</h2>
-                        <p>Use <code>.btn-lg</code> or <code>.btn-sm</code> for larger or smaller buttons, respectively.</p>
-                        <p>Use <code>.btn-block</code> for block-level buttons.</p>
-                        <p>Use <code>disabled</code> attribute to disable your buttons.</p>
-                        <iframe height='266' scrolling='no' src='//codepen.io/mjawili/embed/WwLZQr/?height=266&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/mjawili/pen/WwLZQr/'>button tweaks</a> by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on <a href='http://codepen.io'>CodePen</a>.
+                        <h2>Botões</h2>
+                        <p>Use
+                            <code>.btn-lg</code>
+                            ou
+                            <code>.btn-sm</code>
+                            para botões maiores ou menos respectivamente.</p>
+                        <p>Use
+                            <code>.btn-block</code>
+                            para botões de bloco.</p>
+                        <p>Use o atributo
+                            <code>disabled</code>
+                            para desabilitar o botão.</p>
+                        <iframe height='266' scrolling='no' src='http://codepen.io/mjawili/embed/WwLZQr/?height=266&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/mjawili/pen/WwLZQr/'>button tweaks</a>
+                            by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
                         </iframe>
                     </section>
                     <section>
-                        <h2>Modals</h2>
-                        <p>Prettier versions of dialog prompts!</p>
-                        <p>Triggers sans JS: Set <code>data-target</code> to the modal's ID.</p>
-                        <p>Consists of <code>header</code>, <code>body</code>, and <code>footer</code>.</p>
-                        <iframe height='265' scrolling='no' src='//codepen.io/mjawili/embed/yJOKYO/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/mjawili/pen/yJOKYO/'>modals</a> by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on <a href='http://codepen.io'>CodePen</a>.
+                        <h2>Modais</h2>
+                        <p>Versões mais bonitas para dialogs!</p>
+                        <p>Defina um atributo
+                            <code>data-target</code>
+                            com o valor do ID do modal.</p>
+                        <p>Consiste em um
+                            <code>header</code>,
+                            <code>body</code>, e
+                            <code>footer</code>.</p>
+
+                          </section>
+                          <section>
+                              <h2>Modais</h2>
+                        <iframe height='415' scrolling='no' src='http://codepen.io/mjawili/embed/yJOKYO/?height=415&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/mjawili/pen/yJOKYO/'>modals</a>
+                            by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
                         </iframe>
                     </section>
 
                     <section>
-                        <h2>Alerts</h2>
-                        <p>User <code>.alert</code> to provide contextual feedback messages for user actions.</p>
-                        <p>Bootstrap has four styles: <code>alert-*</code>.</p>
-                        <iframe height='266' scrolling='no' src='//codepen.io/mjawili/embed/wGRrWa/?height=266&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/mjawili/pen/wGRrWa/'>alerts</a> by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on <a href='http://codepen.io'>CodePen</a>.
+                        <h2>Alertas</h2>
+                        <p>Use
+                            <code>.alert</code>
+                            para prover mensagens de feedback para o usuário.</p>
+                        <p>Bootstrap tem quatro estilos:
+                            <code>alert-*</code>.</p>
+
+                          </section>
+
+                          <section>
+                              <h2>Alertas</h2>
+                        <iframe height='415' scrolling='no' src='http://codepen.io/mjawili/embed/wGRrWa/?height=415&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/mjawili/pen/wGRrWa/'>alerts</a>
+                            by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
                         </iframe>
                     </section>
 
-                    <section>
+                    <!-- <section>
                         <h2>Exercise: Contact Me form</h2>
                         <a style="border-bottom: 1px solid;" href="exercises/contact/contact_instructions.html" target="_blank">Instructions</a>
-                    </section>
+                    </section> -->
                     <!-- CARDS -->
                     <section>
                         <h2>Cards</h2>
@@ -385,125 +545,164 @@
 
                     <section>
                         <h2>Cards</h2>
-                        <p>Flexible, extensible content container</p>
-                        <p>Replaced Bootstrap 3's old panels and thumbnails</p>
+                        <p>Container extensível e flexível.</p>
+                        <p>Substituiu os panels e thumbnails do Bootstrap 3.</p>
                         <img src="image/cards.png"/>
                     </section>
 
                     <section>
-                        <h2>Cards Content Types</h2>
-                        <p>A variety is supported! Mix and match.<br>
-                            <code>.card-img-*</code>, <code>.card-title</code>, <code>.card-text</code>,<br>
-                            <code>.card-list*</code>, <code>.card-link</code>.</p>
-                        <iframe height='265' scrolling='no' src='//codepen.io/mjawili/embed/dMwVYg/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/mjawili/pen/dMwVYg/'>card content types</a> by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on <a href='http://codepen.io'>CodePen</a>.
+                        <h2>Tipos de Conteúdo dos Cards</h2>
+                        <p>Vários tipos são suportados.<br>
+                            <code>.card-img-top</code>,
+                            <code>.card-title</code>,
+                            <code>.card-text</code>,<br>
+                            <code>.card-block</code>,
+                            <code>.card-link</code>, etc.</p>
+
+                          </section>
+
+                          <section>
+                              <h2>Tipos de Conteúdo dos Cards</h2>
+                        <iframe height='415' scrolling='no' src='http://codepen.io/mjawili/embed/dMwVYg/?height=415&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/mjawili/pen/dMwVYg/'>card content types</a>
+                            by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
                         </iframe>
                     </section>
 
                     <section>
-                        <h2>Cards Organization</h2>
-                        <p>Use <code>.card-group</code>, <code>.card-deck</code>, or <code>.card-column</code></p>
-                        <p><code>.card-column</code> creates a Pinterest-board affect.</p>
-                        <iframe height='265' scrolling='no' src='//codepen.io/mjawili/embed/gMwwQr/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/mjawili/pen/gMwwQr/'>card organization</a> by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on <a href='http://codepen.io'>CodePen</a>.
+                        <h2>Organização dos Cards</h2>
+                        <p>Use
+                            <code>.card-group</code>,
+                            <code>.card-deck</code>, ou
+                            <code>.card-column</code>
+                        </p>
+
+                          </section>
+
+                          <section>
+                              <h2>Organização dos Cards</h2>
+                        <iframe height='415' scrolling='no' src='http://codepen.io/mjawili/embed/gMwwQr/?height=415&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/mjawili/pen/gMwwQr/'>card organization</a>
+                            by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
                         </iframe>
                     </section>
-                    <section>
+                    <!-- <section>
                         <h2>Exercise: Gallery</h2>
                         <a style="border-bottom: 1px solid;" href="exercises/gallery/gallery_instructions.html" target="_blank">Instructions</a>
-                    </section>
+                    </section> -->
 
                     <section>
                         <h2>Font Awesome</h2>
-                        <p>An icon font and CSS toolkit originally designed for Bootstrap.</p>
-                        <p>Just add one line in your <code>head</code> to start using it.</p>
-                        <p>Add html code to your html to insert icons automatically.</p>
-                        <iframe height='265' scrolling='no' src='//codepen.io/mjawili/embed/XKdEae/?height=265&theme-id=0&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/mjawili/pen/XKdEae/'>Cards</a> by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on <a href='http://codepen.io'>CodePen</a>.
+                        <p>Uma icon font projetada originalmente para o Bootstrap.</p>
+                        <p>Adicione uma linha no
+                            <code>head</code>
+                            para começar a usá-lo.</p>
+                        <p>Adicione código HTML para inserir ícones automaticamente.</p>
+                      </section>
+                      <section>
+                          <h2>Font Awesome</h2>
+                        <iframe height='415' scrolling='no' src='http://codepen.io/mjawili/embed/XKdEae/?height=415&theme-id=0&default-tab=html&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen
+                            <a href='http://codepen.io/mjawili/pen/XKdEae/'>Cards</a>
+                            by Mary Ann Jawili (<a href='http://codepen.io/mjawili'>@mjawili</a>) on
+                            <a href='http://codepen.io'>CodePen</a>.
                         </iframe>
                     </section>
 
                     <section>
-                    <h2>Customize Bootstrap</h2>
-                    <p>Want to customize your Bootstrap page even more?</p>
-                    <p>Just create your own CSS file and include it in the <code>head</code>, <em>below</em> the Bootstrap CSS to add and override styles!</p>
+                        <h2>Customize o Bootstrap</h2>
+                        <p>Quer customizar sua página usando o Bootstrap ainda mais?</p>
+                        <p>Crie seu próprio arquivo CSS e inclua ele no
+                            <code>head</code>,
+                            <em>abaixo</em>
+                            do arquivo CSS do Bootstrap para sobrescrever estilos!</p>
                     </section>
 
                     <section>
-                    <h2>Other Tips</h2>
-                    <p>Before you start creating custom CSS for your design, check the Bootstrap documentation to see if they've already created a class that does what you want.</p>
-                    <p>You can also check if other developers have created a Bootstrap plugin you can leverage.</p>
+                        <h2>Outras Dicas</h2>
+                        <p>Antes de começar criando o seu CSS customizado, verifique na documentação do Bootstrap se existe uma classe para o que você precisa fazer.</p>
+                        <p>Você também pode checar se outros desenvolvedores criaram plugins para o Bootstrap que você pode usar.</p>
                     </section>
+                </div>
 
-
-                    <section>
-                        <h2>Bootstrap in the Wild: Professional Examples</h2>
-                        <ul>
-                            <li><a href="http://www.newsweek.com" target="_blank">Newsweek</a></li>
-                            <li><a href="https://www.nasa.gov" target="_new">Nasa</a></li>
-                            <li><a href="http://www.vogue.com" target="_blank">Vogue</a></li>
-                            <li><a href="https://www.lyft.com" target="_blank">Lyft</a></li>
-                            <li><a href="http://www.opensmc.org" target="_blank">OpenSMC</a></li>
-                        </ul>
-                    </section>
-
-              			<section>
-                    			<h2>Bootstrap Resources</h2>
-                    			<p><a href="http://getbootstrap.com/" target="blank">Get Bootstrap:</a> All documentation and download files for Bootstrap</p>
-                    			<p><a href="http://expo.getbootstrap.com/" target="blank">Bootstrap Expo:</a> Check out all the rad site designs that use Bootstrap</p>
-                    			<p><a href="https://github.com/twbs/bootstrap" target="blank">Bootstrap on GitHub:</a> Check out the Bootstrap repo. Maybe even contribute to the project!</p>
-              			</section>
-
-
-
-      </div>
-
-    </div>
-      <footer>
-        <div class="copyright">
-          Intro to Bootstrap - Adapted from GDISF
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+            </div>
+            <footer>
+                <div class="copyright">
+                    Intro to Bootstrap - Adapted from GDISF
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"/></a>
+                </div>
+            </footer>
         </div>
-      </footer>
-    </div>
 
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
 
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.min.js"></script>
+        <script>
 
-    <script>
-
-      // Full list of configuration options available here:
-      // https://github.com/hakimel/reveal.js#configuration
+            // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
 
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-        // Optional reveal.js plugins
-        dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true },
-                    { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
-        ]
-      });
+                // Optional reveal.js plugins
+                dependencies: [
+                    {
+                        src: 'lib/js/classList.js',
+                        condition: function() {
+                            return !document.body.classList;
+                        }
+                    }, {
+                        src: 'plugin/markdown/marked.js',
+                        condition: function() {
+                            return !!document.querySelector('[data-markdown]');
+                        }
+                    }, {
+                        src: 'plugin/markdown/markdown.js',
+                        condition: function() {
+                            return !!document.querySelector('[data-markdown]');
+                        }
+                    }, {
+                        src: 'plugin/highlight/highlight.js',
+                        async: true,
+                        condition: function() {
+                            return !!document.querySelector('pre code');
+                        },
+                        callback: function() {
+                            hljs.initHighlightingOnLoad();
+                        }
+                    }, {
+                        src: 'plugin/zoom-js/zoom.js',
+                        async: true
+                    }, {
+                        src: 'plugin/notes/notes.js',
+                        async: true
+                    }, {
+                        src: 'plugin/accessibility-helper/js/accessibility-helper.js',
+                        async: true,
+                        condition: function() {
+                            return !!document.body.classList;
+                        }
+                    }
+                ]
+            });
+        </script>
+        <style>
+            .pull-left: {
+                float: left;
+                clear: both;
+                width: 50%;
+            }
+            .pull-right: {
+                float: right;
+                clear: both;
+                width: 50%;
+            }
 
-    </script>
-<style>
-  .pull-left: {
-    float: left;
-    clear: both;
-    width: 50%;
-  }
-  .pull-right: {
-    float: right;
-    clear: both;
-    width: 50%;
-  }
-</style>
-  </body>
+        </style>
+    </body>
 </html>
